@@ -119,4 +119,25 @@ for pizza in pizzas:
 for pizza in freinds_pizza:
     print("the second list for pizzas is " + pizza)
 
+# tuples
+dimensions=(200,50)
+print(dimensions[0])
+print(dimensions[1])
 
+# using for loop on tuples
+for dimension in dimensions:
+    print(dimension)
+
+# changing value of a tuple
+dimensions=(400,5)
+for dimension in dimensions:
+    print(dimension)
+
+########### Try it yourself ##############
+#4-13
+foods=('rice', 'biryani', 'pizza', 'sauce', 'salad', 'soup')
+for food in foods:
+    print(food)
+diff_food=('rice','biryani','daal','sabzi', 'salad', 'soup')
+for food in diff_food:
+    print(food)
