@@ -74,8 +74,49 @@ for values in range(3,31):
     three.append(values*3)
 print(three)
 
+
 #4-9
 cubes=[values**3 for values in range(1,11)]
 print(cubes)
+
+# Slicing with parts of list
+players=['eli','charles', 'Michael', 'florence']
+print(players[0:3])
+print(players[1:2])
+print(players[:3])
+print(players[2:])
+print(players[-3:])
+
+# looping with the slice
+for player in players[0:2]:
+    print(player.title())
+
+# copying a list
+players_1=players[:]
+print(players_1)
+players_1.append('ela')
+players.append('tim')
+print(players_1)
+print(players)
+
+##################### TRY IT YOURSELF ######################
+# 4-10
+items=['pen','pencil','paper','marker','file','duster']
+for item in items[0:3]:
+    print("The item included in the list is " + item)
+for item in items[2:4]:
+    print("The item included in middle of the list is " + item)
+for item in items[-3:]:
+    print("The item included in last of the list is " + item)
+
+# 4-11
+freinds_pizza=pizzas[:]
+print(freinds_pizza)
+pizzas.append('paprooni')
+freinds_pizza.append('tomatoo')
+for pizza in pizzas:
+    print("the first list for pizzas is " + pizza)
+for pizza in freinds_pizza:
+    print("the second list for pizzas is " + pizza)
 
 
